@@ -1,0 +1,37 @@
+, case_id,province,city,group,infection_case,confirmed,latitude,longitude
+48,1200001,Daegu,Nam-gu,True,Shincheonji Church,4511,35.84008,128.5667
+0,1000001,Seoul,Yongsan-gu,True,Itaewon Clubs,139,37.538621,126.992652
+1,1000002,Seoul,Gwanak-gu,True,Richway,119,37.48208,126.901384
+2,1000003,Seoul,Guro-gu,True,Guro-gu Call Center,95,37.508163,126.884387
+3,1000004,Seoul,Yangcheon-gu,True,Yangcheon Table Tennis Club,43,37.546061,126.874209
+4,1000005,Seoul,Dobong-gu,True,Day Care Center,43,37.679422,127.044374
+5,1000006,Seoul,Guro-gu,True,Manmin Central Church,41,37.481059,126.894343
+6,1000007,Seoul,from other city,True,SMR Newly Planted Churches Group,36,-,-
+7,1000008,Seoul,Dongdaemun-gu,True,Dongan Church,17,37.592888,127.056766
+8,1000009,Seoul,from other city,True,Coupang Logistics Center,25,-,-
+9,1000010,Seoul,Gwanak-gu,True,Wangsung Church,30,37.481735,126.930121
+10,1000011,Seoul,Eunpyeong-gu,True,Eunpyeong St. Mary's Hospital,14,37.63369,126.9165
+11,1000012,Seoul,Seongdong-gu,True,Seongdong-gu APT,13,37.55713,127.0403
+12,1000013,Seoul,Jongno-gu,True,Jongno Community Center,10,37.57681,127.006
+13,1000014,Seoul,Gangnam-gu,True,Samsung Medical Center,7,37.48825,127.08559
+14,1000015,Seoul,Jung-gu,True,Jung-gu Fashion Company,7,37.562405,126.984377
+15,1000016,Seoul,Seodaemun-gu,True,Yeonana News Class,5,37.558147,126.943799
+16,1000017,Seoul,Jongno-gu,True,Korea Campus Crusade of Christ,7,37.594782,126.968022
+17,1000018,Seoul,Gangnam-gu,True,Gangnam Yeoksam-dong gathering,6,-,-
+18,1000019,Seoul,from other city,True,Daejeon door-to-door sales,1,-,-
+19,1000020,Seoul,Geumcheon-gu,True,Geumcheon-gu rice milling machine manufacture,6,-,-
+20,1000021,Seoul,from other city,True,Shincheonji Church,8,-,-
+21,1000022,Seoul,from other city,True,Guri Collective Infection,5,-,-
+22,1000023,Seoul,Jung-gu,True,KB Life Insurance,13,37.560899,126.966998
+23,1000024,Seoul,Yeongdeungpo-gu,True,Yeongdeungpo Learning Institute,3,37.520846,126.931278
+24,1000025,Seoul,Gangnam-gu,True,Gangnam Dongin Church,1,37.522331,127.057388
+25,1000026,Seoul,Yangcheon-gu,True,Biblical Language study meeting,3,37.524623,126.843118
+26,1000027,Seoul,Seocho-gu,True,Seocho Family,5,-,-
+27,1000028,Seoul,from other city,True,Anyang Gunpo Pastors Group,1,-,-
+28,1000029,Seoul,Gangnam-gu,True,Samsung Fire & Marine Insurance,4,37.498279,127.030139
+29,1000030,Seoul,Gangseo-gu,True,SJ Investment Call Center,0,37.559649,126.835102
+30,1000031,Seoul,from other city,True,Yongin Brothers,4,-,-
+31,1000032,Seoul,Jung-gu,True,Seoul City Hall Station safety worker,3,37.565699,126.977079
+32,1000033,Seoul,from other city,True,Uiwang Logistics Center,2,-,-
+33,1000034,Seoul,-,True,Orange Life,1,-,-
+34,1000035,Seoul,Guro-gu,True,Daezayeon Korea,3,37.486837,126.893163

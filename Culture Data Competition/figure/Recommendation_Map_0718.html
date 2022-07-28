@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fb3387302ebb69e6a357f8b2b31e8678 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fb3387302ebb69e6a357f8b2b31e8678" ></div>
+        
+</body>
+<script>    
+    
+            var map_fb3387302ebb69e6a357f8b2b31e8678 = L.map(
+                "map_fb3387302ebb69e6a357f8b2b31e8678",
+                {
+                    center: [35.1366, 129.0844],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6265577af80ca81b82d75debe5cac690 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var marker_9d06dcc5b4babc5da781173811a8afa9 = L.marker(
+                [35.136089, 129.087233],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_8bdedcc62840a093b5e2a66abb5fc623 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d06dcc5b4babc5da781173811a8afa9.setIcon(icon_8bdedcc62840a093b5e2a66abb5fc623);
+        
+    
+            marker_9d06dcc5b4babc5da781173811a8afa9.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 지성도서<br />Cost: 25000<br /> Category: 문화공연관람<br />Distance: 263.81(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d91bd5d17634f154f186afac1fcf38e = L.marker(
+                [35.133482, 129.087437],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_97190958fb6dc875c22f2b73809745ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d91bd5d17634f154f186afac1fcf38e.setIcon(icon_97190958fb6dc875c22f2b73809745ec);
+        
+    
+            marker_7d91bd5d17634f154f186afac1fcf38e.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 아이랜드<br />Cost: 23000<br /> Category: 여행<br />Distance: 443.26(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86a592c16c64b190e64d4190683098da = L.marker(
+                [35.1345322, 129.089295],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_a2a84dd3bbc76f3ffc78156b4470dc3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86a592c16c64b190e64d4190683098da.setIcon(icon_a2a84dd3bbc76f3ffc78156b4470dc3c);
+        
+    
+            marker_86a592c16c64b190e64d4190683098da.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 세븐브릭스<br />Cost: 37000<br /> Category: 생활체육<br />Distance: 501.0(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab68e1de05654315956611429722529a = L.marker(
+                [35.135508, 129.094187],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_602127f73edf1b7c2a759749342bf32d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab68e1de05654315956611429722529a.setIcon(icon_602127f73edf1b7c2a759749342bf32d);
+        
+    
+            marker_ab68e1de05654315956611429722529a.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 팬레코드<br />Cost: 12000<br /> Category: 여행<br />Distance: 898.22(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2fa2b9db2f578a17ddeea3f79b7baa2 = L.marker(
+                [35.1397567, 129.079164],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_4cd6b2286ac6af27cd602bce3487877f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a2fa2b9db2f578a17ddeea3f79b7baa2.setIcon(icon_4cd6b2286ac6af27cd602bce3487877f);
+        
+    
+            marker_a2fa2b9db2f578a17ddeea3f79b7baa2.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 탑서점<br />Cost: 39000<br /> Category: 여행<br />Distance: 591.52(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e48576fda26554fec2154e022c9a2ce = L.marker(
+                [35.142374, 129.088999],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_4ec04cf0c3e7f658f490b1b7107ae6ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e48576fda26554fec2154e022c9a2ce.setIcon(icon_4ec04cf0c3e7f658f490b1b7107ae6ea);
+        
+    
+            marker_4e48576fda26554fec2154e022c9a2ce.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 동천서점<br />Cost: 26000<br /> Category: 여행<br />Distance: 766.22(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54813793e192849c7753fc44f7f52fe7 = L.marker(
+                [35.135727, 129.093573],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_b3b819c79346d335c6fc471746e5973b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_54813793e192849c7753fc44f7f52fe7.setIcon(icon_b3b819c79346d335c6fc471746e5973b);
+        
+    
+            marker_54813793e192849c7753fc44f7f52fe7.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 주식회사스마일재팬투어<br />Cost: 16000<br /> Category: 문화공연관람<br />Distance: 839.77(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f69b4fb0a4490c01ca812b007be4ecc = L.marker(
+                [35.1346994, 129.0947945],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_917edc3be95469f8235761533977c067 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4f69b4fb0a4490c01ca812b007be4ecc.setIcon(icon_917edc3be95469f8235761533977c067);
+        
+    
+            marker_4f69b4fb0a4490c01ca812b007be4ecc.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 찐피티<br />Cost: 38000<br /> Category: 생활체육<br />Distance: 968.56(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec853dfac935d352009619b9d15136af = L.marker(
+                [35.137131, 129.072179],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_0e6716728d08c21f3c806925b94d3a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec853dfac935d352009619b9d15136af.setIcon(icon_0e6716728d08c21f3c806925b94d3a9c);
+        
+    
+            marker_ec853dfac935d352009619b9d15136af.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 일구사진방<br />Cost: 23000<br /> Category: 생활체육<br />Distance: 1112.86(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efcdda1d0ed228e8bc6c9667c5e92501 = L.marker(
+                [35.135642, 129.096673],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_ab7acc036e6c0a5b64ed4aa2b4f31f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_efcdda1d0ed228e8bc6c9667c5e92501.setIcon(icon_ab7acc036e6c0a5b64ed4aa2b4f31f7b);
+        
+    
+            marker_efcdda1d0ed228e8bc6c9667c5e92501.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 삼천리자전거 대연점<br />Cost: 17000<br /> Category: 문화공연관람<br />Distance: 1121.1(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_825089ed070dd491cbc82bae64312c39 = L.marker(
+                [35.135514, 129.071733],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_503022996e80d20204ac8dab4d3b01f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_825089ed070dd491cbc82bae64312c39.setIcon(icon_503022996e80d20204ac8dab4d3b01f2);
+        
+    
+            marker_825089ed070dd491cbc82bae64312c39.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 늘푸른여행사<br />Cost: 35000<br /> Category: 문화공연관람<br />Distance: 1158.17(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2b65a5978375c538fe8f2ccb328c103 = L.marker(
+                [35.127701, 129.09118],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_8d88243e84ae78856ba202a1a8333f32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2b65a5978375c538fe8f2ccb328c103.setIcon(icon_8d88243e84ae78856ba202a1a8333f32);
+        
+    
+            marker_f2b65a5978375c538fe8f2ccb328c103.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 대연킴스볼링<br />Cost: 27000<br /> Category: 생활체육<br />Distance: 1165.89(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd5cdaefea7721ceebef0df479379db8 = L.marker(
+                [35.144461, 129.074243],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_aa04ac6e6f949bd72c6cabaf6375165b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bd5cdaefea7721ceebef0df479379db8.setIcon(icon_aa04ac6e6f949bd72c6cabaf6375165b);
+        
+    
+            marker_bd5cdaefea7721ceebef0df479379db8.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 문현도서<br />Cost: 21000<br /> Category: 생활체육<br />Distance: 1271.63(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1827962adfa22830ebf009a5d1509e2 = L.marker(
+                [35.137589, 129.070261],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_69ff28007d95deaa54289c4b60e7b26a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1827962adfa22830ebf009a5d1509e2.setIcon(icon_69ff28007d95deaa54289c4b60e7b26a);
+        
+    
+            marker_e1827962adfa22830ebf009a5d1509e2.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 낙원별장<br />Cost: 25000<br /> Category: 생활체육<br />Distance: 1290.39(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e78045b50d6d4408ac905f8f063b0c9b = L.marker(
+                [35.139742, 129.09812],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_a05e06e60a25a3238735c54a5383c8ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e78045b50d6d4408ac905f8f063b0c9b.setIcon(icon_a05e06e60a25a3238735c54a5383c8ba);
+        
+    
+            marker_e78045b50d6d4408ac905f8f063b0c9b.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 경성스튜디오<br />Cost: 28000<br /> Category: 여행<br />Distance: 1295.58(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_743fc35d59e9cd05608a7c73a46cab8b = L.marker(
+                [35.1362413, 129.09865],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_e5d2fdd43786d77fcec609c8945b4ccb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_743fc35d59e9cd05608a7c73a46cab8b.setIcon(icon_e5d2fdd43786d77fcec609c8945b4ccb);
+        
+    
+            marker_743fc35d59e9cd05608a7c73a46cab8b.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 배시시 스튜디오<br />Cost: 13000<br /> Category: 생활체육<br />Distance: 1296.42(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_868a530bff775c0298826c2e4df719e6 = L.marker(
+                [35.137519, 129.069994],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_6b394329ee3b9d107b742b4a93b6c701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_868a530bff775c0298826c2e4df719e6.setIcon(icon_6b394329ee3b9d107b742b4a93b6c701);
+        
+    
+            marker_868a530bff775c0298826c2e4df719e6.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 그랜드모텔<br />Cost: 21000<br /> Category: 생활체육<br />Distance: 1313.96(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_389d45dbbadfe0fe0601c0aecfcad0b5 = L.marker(
+                [35.12764, 129.074913],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_36790a08bf37ffc482f0871c28b81993 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_389d45dbbadfe0fe0601c0aecfcad0b5.setIcon(icon_36790a08bf37ffc482f0871c28b81993);
+        
+    
+            marker_389d45dbbadfe0fe0601c0aecfcad0b5.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 남구종합사회복지관<br />Cost: 28000<br /> Category: 여행<br />Distance: 1317.93(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9b8ead08adb9562a76a546cbf9158b0 = L.marker(
+                [35.1274029, 129.0938079],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_500d1aaa68861a672bd4322cced30c1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9b8ead08adb9562a76a546cbf9158b0.setIcon(icon_500d1aaa68861a672bd4322cced30c1d);
+        
+    
+            marker_d9b8ead08adb9562a76a546cbf9158b0.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 부산문화회관<br />Cost: 13000<br /> Category: 생활체육<br />Distance: 1333.34(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2667ece77bcd21347b07a78db74995d1 = L.marker(
+                [35.1366673, 129.09924],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_f2782bc59262c9c2a31b18f30708dfd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2667ece77bcd21347b07a78db74995d1.setIcon(icon_f2782bc59262c9c2a31b18f30708dfd4);
+        
+    
+            marker_2667ece77bcd21347b07a78db74995d1.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 알라딘 중고서점 부산 경성대점<br />Cost: 33000<br /> Category: 생활체육<br />Distance: 1349.47(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2ed1dcf2df166ab1249aa28e3913f8a = L.marker(
+                [35.1366673, 129.09924],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_1d2fc05fe2b33ba102672d64f96946f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d2ed1dcf2df166ab1249aa28e3913f8a.setIcon(icon_1d2fc05fe2b33ba102672d64f96946f6);
+        
+    
+            marker_d2ed1dcf2df166ab1249aa28e3913f8a.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 알라딘 중고서점 부산경성대부경대역점_문화비<br />Cost: 20000<br /> Category: 생활체육<br />Distance: 1349.47(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b81e14a3e62fc40d6d5cd15462410da = L.marker(
+                [35.1373397, 129.0992599],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_d8eca4980cda527b6be3dc34489f8611 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b81e14a3e62fc40d6d5cd15462410da.setIcon(icon_d8eca4980cda527b6be3dc34489f8611);
+        
+    
+            marker_3b81e14a3e62fc40d6d5cd15462410da.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: CGV 대연(무비머니)(상품권)<br />Cost: 27000<br /> Category: 생활체육<br />Distance: 1353.76(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6518970a31595f6735a5af24fcda8ea = L.marker(
+                [35.1373397, 129.0992599],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_b21f3dd5dba931fda7a0ea139dd9fcc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e6518970a31595f6735a5af24fcda8ea.setIcon(icon_b21f3dd5dba931fda7a0ea139dd9fcc8);
+        
+    
+            marker_e6518970a31595f6735a5af24fcda8ea.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: CGV 대연<br />Cost: 13000<br /> Category: 여행<br />Distance: 1353.76(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fca19b2f929022ccb22d3762befafc08 = L.marker(
+                [35.1373397, 129.0992599],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_bcfacda943bf57cf4826335654082b65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fca19b2f929022ccb22d3762befafc08.setIcon(icon_bcfacda943bf57cf4826335654082b65);
+        
+    
+            marker_fca19b2f929022ccb22d3762befafc08.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: CGV 대연(매점)<br />Cost: 13000<br /> Category: 여행<br />Distance: 1353.76(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6462d32c0281eccc3f5375a827f7a54 = L.marker(
+                [35.136801, 129.099535],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_afbf51dbfe00b3211febea265e0b4a3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f6462d32c0281eccc3f5375a827f7a54.setIcon(icon_afbf51dbfe00b3211febea265e0b4a3c);
+        
+    
+            marker_f6462d32c0281eccc3f5375a827f7a54.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 고운바다<br />Cost: 14000<br /> Category: 문화공연관람<br />Distance: 1376.46(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9a9fabc29b36064a93a8bb08ada64b4 = L.marker(
+                [35.1311185, 129.098272],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_68b4cd31a8c9b78ed4cd4998852abead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9a9fabc29b36064a93a8bb08ada64b4.setIcon(icon_68b4cd31a8c9b78ed4cd4998852abead);
+        
+    
+            marker_d9a9fabc29b36064a93a8bb08ada64b4.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 민턴스포츠(한국스포츠통상)<br />Cost: 22000<br /> Category: 여행<br />Distance: 1401.01(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_906586d7fff4f19542cbcfb0a0b12806 = L.marker(
+                [35.136769, 129.100033],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_db64e2f9617912ad5fc381daab9ef5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_906586d7fff4f19542cbcfb0a0b12806.setIcon(icon_db64e2f9617912ad5fc381daab9ef5d1);
+        
+    
+            marker_906586d7fff4f19542cbcfb0a0b12806.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 동아서적<br />Cost: 25000<br /> Category: 문화공연관람<br />Distance: 1421.68(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1a3151450800616b1accf38c22736e1 = L.marker(
+                [35.1384367, 129.100097],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_81bac0e3bf7650715b9a7c3cb454a29b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1a3151450800616b1accf38c22736e1.setIcon(icon_81bac0e3bf7650715b9a7c3cb454a29b);
+        
+    
+            marker_e1a3151450800616b1accf38c22736e1.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 경성대학교 구내서점23호관 303호<br />Cost: 34000<br /> Category: 여행<br />Distance: 1441.9(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1edd97cbcfddcd7ddd6d4b935a3852a3 = L.marker(
+                [35.1339504, 129.1002468],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_0edef177b2c45f329b394ba92947b099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1edd97cbcfddcd7ddd6d4b935a3852a3.setIcon(icon_0edef177b2c45f329b394ba92947b099);
+        
+    
+            marker_1edd97cbcfddcd7ddd6d4b935a3852a3.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: (사단)인코리안 심포니오케스트라<br />Cost: 17000<br /> Category: 문화공연관람<br />Distance: 1470.84(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_003435f030f5006c3d2c7c8296ccf0de = L.marker(
+                [35.136565, 129.100686],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_6648a0ab91acdc80ffcee3092c7d6265 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_003435f030f5006c3d2c7c8296ccf0de.setIcon(icon_6648a0ab91acdc80ffcee3092c7d6265);
+        
+    
+            marker_003435f030f5006c3d2c7c8296ccf0de.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 대학with스튜디오<br />Cost: 11000<br /> Category: 여행<br />Distance: 1480.95(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02bbee54efdcde4d8865fad494ed17e4 = L.marker(
+                [35.137175, 129.100704],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_23e2be39fd7f7deab7a799c8a814d9c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_02bbee54efdcde4d8865fad494ed17e4.setIcon(icon_23e2be39fd7f7deab7a799c8a814d9c4);
+        
+    
+            marker_02bbee54efdcde4d8865fad494ed17e4.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 큐브락볼링장<br />Cost: 24000<br /> Category: 문화공연관람<br />Distance: 1483.95(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbfb929978eb6cc2f1677dd538a92c47 = L.marker(
+                [35.137157, 129.100706],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_57e5879d77d6599cf8b622a864b1f926 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fbfb929978eb6cc2f1677dd538a92c47.setIcon(icon_57e5879d77d6599cf8b622a864b1f926);
+        
+    
+            marker_fbfb929978eb6cc2f1677dd538a92c47.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: (주)터치스톤<br />Cost: 18000<br /> Category: 여행<br />Distance: 1484.05(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_107cb3c33e806e4722d7274f4e302354 = L.marker(
+                [35.123537, 129.080243],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_05440de9a7faab90cbdce6cbb8a9430d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_107cb3c33e806e4722d7274f4e302354.setIcon(icon_05440de9a7faab90cbdce6cbb8a9430d);
+        
+    
+            marker_107cb3c33e806e4722d7274f4e302354.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 성지서점<br />Cost: 35000<br /> Category: 여행<br />Distance: 1500.93(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36405e81b17250642bfaa5afa23faa76 = L.marker(
+                [35.138057, 129.100873],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_41887f3bafeb796517e9794b694727e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36405e81b17250642bfaa5afa23faa76.setIcon(icon_41887f3bafeb796517e9794b694727e5);
+        
+    
+            marker_36405e81b17250642bfaa5afa23faa76.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 영남화방문구<br />Cost: 31000<br /> Category: 여행<br />Distance: 1506.67(m)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c30fd3638f4cbadae39746243ea57fe5 = L.marker(
+                [35.1366, 129.0844],
+                {}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+    
+            var icon_8b36beb12db9bffd509ac11d3218ea13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c30fd3638f4cbadae39746243ea57fe5.setIcon(icon_8b36beb12db9bffd509ac11d3218ea13);
+        
+    
+            marker_c30fd3638f4cbadae39746243ea57fe5.bindTooltip(
+                `<div>
+                     User
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_60d61b7c2ee7757f39c07ebc4979d1de = L.circle(
+                [35.1366, 129.0844],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 898.2160272868799, "stroke": true, "weight": 3}
+            ).addTo(map_fb3387302ebb69e6a357f8b2b31e8678);
+        
+</script>
