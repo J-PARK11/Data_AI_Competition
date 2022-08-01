@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ba5d7602df4de6a6823e2f91b400968 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6ba5d7602df4de6a6823e2f91b400968" ></div>
+        
+</body>
+<script>    
+    
+            var map_6ba5d7602df4de6a6823e2f91b400968 = L.map(
+                "map_6ba5d7602df4de6a6823e2f91b400968",
+                {
+                    center: [35.1366, 129.0844],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6351c5832db8a8a6037b0b7373dd0d39 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var marker_f6eb7ce028c0e71712765a6f979c2bcd = L.marker(
+                [35.136089, 129.087233],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_c5b3f67688e64125d2873cd57d357c50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f6eb7ce028c0e71712765a6f979c2bcd.setIcon(icon_c5b3f67688e64125d2873cd57d357c50);
+        
+    
+        var popup_166fc35de90a87e46f6263d48cb7a6f9 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_b413ed788c47b0c404f30f618a5adbc8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzc1ZmYwZjY0M2EyOGZmNmNkZmQ5MzIxZDdjOGQ1ZmFkIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97KeA7ISx64+E7IScInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojMzZBNEQ1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyngOyEseuPhOyEnDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_166fc35de90a87e46f6263d48cb7a6f9.setContent(i_frame_b413ed788c47b0c404f30f618a5adbc8);
+        
+
+        marker_f6eb7ce028c0e71712765a6f979c2bcd.bindPopup(popup_166fc35de90a87e46f6263d48cb7a6f9)
+        ;
+
+        
+    
+    
+            marker_f6eb7ce028c0e71712765a6f979c2bcd.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 지성도서<br />Cost: 25,000<br /> Category: 문화공연관람<br />Distance: 263.81(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3631d7915182f25826cf90c7ae7e5a54 = L.marker(
+                [35.133482, 129.087437],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_7fa2563d27237d38a74ce37223bfbc4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3631d7915182f25826cf90c7ae7e5a54.setIcon(icon_7fa2563d27237d38a74ce37223bfbc4b);
+        
+    
+        var popup_3d2ebe31f5a2d5b07a29c4aafc642dc1 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_365beafd47f5837cf2598cabbf5b2cf3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzFmZThiYmRkNDVlODAwNmVjYTc4Y2U3MmI2OTc1ZTE1IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97JWE7J20656c65OcInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojMzZBNEQ1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyVhOydtOuenOuTnDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_3d2ebe31f5a2d5b07a29c4aafc642dc1.setContent(i_frame_365beafd47f5837cf2598cabbf5b2cf3);
+        
+
+        marker_3631d7915182f25826cf90c7ae7e5a54.bindPopup(popup_3d2ebe31f5a2d5b07a29c4aafc642dc1)
+        ;
+
+        
+    
+    
+            marker_3631d7915182f25826cf90c7ae7e5a54.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 아이랜드<br />Cost: 23,000<br /> Category: 여행<br />Distance: 443.26(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b00e0485edefbfa7dd5086bf5d02f147 = L.marker(
+                [35.1345322, 129.089295],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_9c96a5ced135620ffcf6cd7fa26adfe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b00e0485edefbfa7dd5086bf5d02f147.setIcon(icon_9c96a5ced135620ffcf6cd7fa26adfe1);
+        
+    
+        var popup_cae400f265e6cbda07110009525b3ace = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_ac07cc7a4cc62a341350a296332235a3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzMxYzJkZDhlNmFkMDkzOWU1NmJmYWUyY2E2NDdlYTg2IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97IS467iQ67iM66at7IqkInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojMzZBNEQ1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyEuOu4kOu4jOumreyKpDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_cae400f265e6cbda07110009525b3ace.setContent(i_frame_ac07cc7a4cc62a341350a296332235a3);
+        
+
+        marker_b00e0485edefbfa7dd5086bf5d02f147.bindPopup(popup_cae400f265e6cbda07110009525b3ace)
+        ;
+
+        
+    
+    
+            marker_b00e0485edefbfa7dd5086bf5d02f147.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 세븐브릭스<br />Cost: 37,000<br /> Category: 생활체육<br />Distance: 501.0(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc42ac78421e1ef90887c5a938181a06 = L.marker(
+                [35.135508, 129.094187],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_0f194825ed10884239f1972d4a63805b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc42ac78421e1ef90887c5a938181a06.setIcon(icon_0f194825ed10884239f1972d4a63805b);
+        
+    
+        var popup_87326eca11a137791f31a35f8ad744bb = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_579752070ff357384ac17ef6cb9198c5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzU3MmQwYWJmNTQzZjdlZmIwYWNiNTliNzJiNTY3MDMwIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97Yys66CI7L2U65OcInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojMzZBNEQ1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPu2MrOugiOy9lOuTnDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_87326eca11a137791f31a35f8ad744bb.setContent(i_frame_579752070ff357384ac17ef6cb9198c5);
+        
+
+        marker_bc42ac78421e1ef90887c5a938181a06.bindPopup(popup_87326eca11a137791f31a35f8ad744bb)
+        ;
+
+        
+    
+    
+            marker_bc42ac78421e1ef90887c5a938181a06.bindTooltip(
+                `<div>
+                     Accepted<br />Name: 팬레코드<br />Cost: 12,000<br /> Category: 여행<br />Distance: 898.22(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90f69627b0be7d6040b63e892c26f872 = L.marker(
+                [35.1397567, 129.079164],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_daa6f49da66601d008392a0ec2591ea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_90f69627b0be7d6040b63e892c26f872.setIcon(icon_daa6f49da66601d008392a0ec2591ea7);
+        
+    
+        var popup_d57aed781e90b72a206c218b33d4b416 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_57e41a9aba94a29e22fee2873907d699 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzkyYmEyNzQ3MTUxNWM3NGI3N2FhYTNkMTVhY2RmMjcwIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97YOR7ISc7KCQInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPu2DkeyEnOygkDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_d57aed781e90b72a206c218b33d4b416.setContent(i_frame_57e41a9aba94a29e22fee2873907d699);
+        
+
+        marker_90f69627b0be7d6040b63e892c26f872.bindPopup(popup_d57aed781e90b72a206c218b33d4b416)
+        ;
+
+        
+    
+    
+            marker_90f69627b0be7d6040b63e892c26f872.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 탑서점<br />Cost: 39,000<br /> Category: 여행<br />Distance: 591.52(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c58599cab2a0b8d251cdbeefe3f4bd31 = L.marker(
+                [35.142374, 129.088999],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_33e96864bcb8792135c67aa3012f99a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c58599cab2a0b8d251cdbeefe3f4bd31.setIcon(icon_33e96864bcb8792135c67aa3012f99a9);
+        
+    
+        var popup_434f4746255882ec33fdc6f692864ef0 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_b885f440aa0ed0fb2fc1325572461c6d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2UyNzM4NzRjOTIxOWJhYjU5YWNiY2JiY2JhMGU4YWY4IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964+Z7LKc7ISc7KCQInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuuPmeyynOyEnOygkDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_434f4746255882ec33fdc6f692864ef0.setContent(i_frame_b885f440aa0ed0fb2fc1325572461c6d);
+        
+
+        marker_c58599cab2a0b8d251cdbeefe3f4bd31.bindPopup(popup_434f4746255882ec33fdc6f692864ef0)
+        ;
+
+        
+    
+    
+            marker_c58599cab2a0b8d251cdbeefe3f4bd31.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 동천서점<br />Cost: 26,000<br /> Category: 여행<br />Distance: 766.22(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_681176441ead935944d86c0e56786f94 = L.marker(
+                [35.135727, 129.093573],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_b64f5354baa50296266020aca6f414da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_681176441ead935944d86c0e56786f94.setIcon(icon_b64f5354baa50296266020aca6f414da);
+        
+    
+        var popup_0da2bac890edcd51db4fc4317d21362e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_80871ded58a553408aaaf811cb36593a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzg5ZGM3Y2Q0NjRlNzk2MDkwOGEwYmMzZDUyYmNmMjM4IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97KO87Iud7ZqM7IKs7Iqk66eI7J287J6s7Yys7Yis7Ja0InRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyjvOyLne2ajOyCrOyKpOuniOydvOyerO2MrO2IrOyWtDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_0da2bac890edcd51db4fc4317d21362e.setContent(i_frame_80871ded58a553408aaaf811cb36593a);
+        
+
+        marker_681176441ead935944d86c0e56786f94.bindPopup(popup_0da2bac890edcd51db4fc4317d21362e)
+        ;
+
+        
+    
+    
+            marker_681176441ead935944d86c0e56786f94.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 주식회사스마일재팬투어<br />Cost: 16,000<br /> Category: 문화공연관람<br />Distance: 839.77(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2910758be3b45fe41ac02c9e69e86813 = L.marker(
+                [35.1346994, 129.0947945],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_88f884cd75c4ce1bd8b59f49e2363102 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2910758be3b45fe41ac02c9e69e86813.setIcon(icon_88f884cd75c4ce1bd8b59f49e2363102);
+        
+    
+        var popup_9906213d7f49e9f8ed0569b47f89f269 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_4589a9ea3a30300a8f03938205752cc3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2QzMTBlZDFhMjI4Yzg5YjU3NTQ5NjljYmQzNGU4MjdhIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97LCQ7ZS87YuwInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuywkO2UvO2LsDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_9906213d7f49e9f8ed0569b47f89f269.setContent(i_frame_4589a9ea3a30300a8f03938205752cc3);
+        
+
+        marker_2910758be3b45fe41ac02c9e69e86813.bindPopup(popup_9906213d7f49e9f8ed0569b47f89f269)
+        ;
+
+        
+    
+    
+            marker_2910758be3b45fe41ac02c9e69e86813.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 찐피티<br />Cost: 38,000<br /> Category: 생활체육<br />Distance: 968.56(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_462b927e1a919f9388949959f9bb022b = L.marker(
+                [35.137131, 129.072179],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_a9d0204942056a5b7b70735938bd4bd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_462b927e1a919f9388949959f9bb022b.setIcon(icon_a9d0204942056a5b7b70735938bd4bd6);
+        
+    
+        var popup_3a1105b41a0840088d9657c01aa8de97 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1459309ca5a2233d33ebf3924d376c76 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzFiM2Q3YjQzM2EwYzRmOGE4MTdmMDYyZjgwNWJlNDgzIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97J286rWs7IKs7KeE67CpInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuydvOq1rOyCrOynhOuwqTwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_3a1105b41a0840088d9657c01aa8de97.setContent(i_frame_1459309ca5a2233d33ebf3924d376c76);
+        
+
+        marker_462b927e1a919f9388949959f9bb022b.bindPopup(popup_3a1105b41a0840088d9657c01aa8de97)
+        ;
+
+        
+    
+    
+            marker_462b927e1a919f9388949959f9bb022b.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 일구사진방<br />Cost: 23,000<br /> Category: 생활체육<br />Distance: 1112.86(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8074d8ff66ec720840e53371fd211233 = L.marker(
+                [35.135642, 129.096673],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_b7700588b3b192911405bd0e28b6768b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8074d8ff66ec720840e53371fd211233.setIcon(icon_b7700588b3b192911405bd0e28b6768b);
+        
+    
+        var popup_75503d4a3b11fc58696892a33e5d695f = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_52f9e753a4d1e0df0a704ff339e9d7e8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzAyNmI5ZDQzZTlmZTM2NWJlODdlNzBmMDk1OTQ2YTc0IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97IK87LKc66as7J6Q7KCE6rGwIOuMgOyXsOygkCJ0YXJnZXQ9Il9ibGFuayI+ICAgICAgICA8cCBzdHlsZT0iY29sb3I6IzcwQUQyNTtmb250LXNpemU6MjBweDtmb250LWZhbWlseTp2ZXJkYW5hO3RleHQtYWxpZ246Y2VudGVyIj7sgrzsspzrpqzsnpDsoITqsbAg64yA7Jew7KCQPC9wPjwvYT48L2Rpdj4=" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_75503d4a3b11fc58696892a33e5d695f.setContent(i_frame_52f9e753a4d1e0df0a704ff339e9d7e8);
+        
+
+        marker_8074d8ff66ec720840e53371fd211233.bindPopup(popup_75503d4a3b11fc58696892a33e5d695f)
+        ;
+
+        
+    
+    
+            marker_8074d8ff66ec720840e53371fd211233.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 삼천리자전거 대연점<br />Cost: 17,000<br /> Category: 문화공연관람<br />Distance: 1121.1(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bee1774187c2d7956a5e436b7914c2a9 = L.marker(
+                [35.135514, 129.071733],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_673eedf6f48e810b537975e92a6fdddf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bee1774187c2d7956a5e436b7914c2a9.setIcon(icon_673eedf6f48e810b537975e92a6fdddf);
+        
+    
+        var popup_08f452b45805aa5ed93a2be1f1722648 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_133013b01d27f22ca861aca335c2e6b6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzI3MTFkNDMxOTQ4OWM2NTc1Y2IxYWE1NDJlMDYzZGRjIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964qY7ZG466W47Jes7ZaJ7IKsInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuuKmO2RuOuluOyXrO2WieyCrDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_08f452b45805aa5ed93a2be1f1722648.setContent(i_frame_133013b01d27f22ca861aca335c2e6b6);
+        
+
+        marker_bee1774187c2d7956a5e436b7914c2a9.bindPopup(popup_08f452b45805aa5ed93a2be1f1722648)
+        ;
+
+        
+    
+    
+            marker_bee1774187c2d7956a5e436b7914c2a9.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 늘푸른여행사<br />Cost: 35,000<br /> Category: 문화공연관람<br />Distance: 1158.17(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bf2a0d9c8ea9bdcd4df9d53c93a5f86 = L.marker(
+                [35.127701, 129.09118],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_2d6f366fbe6208488270ce83856047d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bf2a0d9c8ea9bdcd4df9d53c93a5f86.setIcon(icon_2d6f366fbe6208488270ce83856047d3);
+        
+    
+        var popup_f4e82b59a0cbc04e86590d73c0b79240 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_634c38ca54bcaf6c054863476309bb9f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzAxNmQwMzcwNTczNzY5M2RmODg1MTZiOTNkZDRhNGQyIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964yA7Jew7YK07Iqk67O866eBInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuuMgOyXsO2CtOyKpOuzvOungTwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_f4e82b59a0cbc04e86590d73c0b79240.setContent(i_frame_634c38ca54bcaf6c054863476309bb9f);
+        
+
+        marker_7bf2a0d9c8ea9bdcd4df9d53c93a5f86.bindPopup(popup_f4e82b59a0cbc04e86590d73c0b79240)
+        ;
+
+        
+    
+    
+            marker_7bf2a0d9c8ea9bdcd4df9d53c93a5f86.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 대연킴스볼링<br />Cost: 27,000<br /> Category: 생활체육<br />Distance: 1165.89(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4306d979eb4aa971cad84a8ee3c1161 = L.marker(
+                [35.144461, 129.074243],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_0bdc5e8be5695613571bde554920b0b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e4306d979eb4aa971cad84a8ee3c1161.setIcon(icon_0bdc5e8be5695613571bde554920b0b8);
+        
+    
+        var popup_2327e7b64cde75f46199d600de652549 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_85ea12d6e58ffb272c14dfa8e9ed188b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzBjY2FjZDc1OTViZjQyMTIwYmNhOTAxNjZiYmI0MDc3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk966y47ZiE64+E7IScInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuusuO2YhOuPhOyEnDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_2327e7b64cde75f46199d600de652549.setContent(i_frame_85ea12d6e58ffb272c14dfa8e9ed188b);
+        
+
+        marker_e4306d979eb4aa971cad84a8ee3c1161.bindPopup(popup_2327e7b64cde75f46199d600de652549)
+        ;
+
+        
+    
+    
+            marker_e4306d979eb4aa971cad84a8ee3c1161.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 문현도서<br />Cost: 21,000<br /> Category: 생활체육<br />Distance: 1271.63(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db8aaa6c2b6465cfbfd316c71a6f00d0 = L.marker(
+                [35.137589, 129.070261],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_0118587899452b0c4eebfc2749b9d7f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_db8aaa6c2b6465cfbfd316c71a6f00d0.setIcon(icon_0118587899452b0c4eebfc2749b9d7f0);
+        
+    
+        var popup_f05f6f375d43c8eae3b82d5b9265e76f = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1e744270d98c122a092da7ac41185c91 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2Y4ZDk3OGEyZTQ2MjVhN2E4NWRjZDMxYWMyZTc5NmQ5IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964KZ7JuQ67OE7J6lInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuuCmeybkOuzhOyepTwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_f05f6f375d43c8eae3b82d5b9265e76f.setContent(i_frame_1e744270d98c122a092da7ac41185c91);
+        
+
+        marker_db8aaa6c2b6465cfbfd316c71a6f00d0.bindPopup(popup_f05f6f375d43c8eae3b82d5b9265e76f)
+        ;
+
+        
+    
+    
+            marker_db8aaa6c2b6465cfbfd316c71a6f00d0.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 낙원별장<br />Cost: 25,000<br /> Category: 생활체육<br />Distance: 1290.39(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_446e9a0ee8b6693a35b785c1dcb6c2c2 = L.marker(
+                [35.139742, 129.09812],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_233d1ce2df4d5b7a35dfdd6297a0118a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_446e9a0ee8b6693a35b785c1dcb6c2c2.setIcon(icon_233d1ce2df4d5b7a35dfdd6297a0118a);
+        
+    
+        var popup_167cb6e81c643c015a2966fb67651eed = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_aabf6508cedccbd9476fbc83d01a84f3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzJmZWFmNTQ4NTk1NWY1NzA4YjI3ZDdjN2VkMjM5NGM3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk96rK97ISx7Iqk7Yqc65SU7JikInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuqyveyEseyKpO2KnOuUlOyYpDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_167cb6e81c643c015a2966fb67651eed.setContent(i_frame_aabf6508cedccbd9476fbc83d01a84f3);
+        
+
+        marker_446e9a0ee8b6693a35b785c1dcb6c2c2.bindPopup(popup_167cb6e81c643c015a2966fb67651eed)
+        ;
+
+        
+    
+    
+            marker_446e9a0ee8b6693a35b785c1dcb6c2c2.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 경성스튜디오<br />Cost: 28,000<br /> Category: 여행<br />Distance: 1295.58(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5ea7a1678e607ae6bccc16ad4a562e8 = L.marker(
+                [35.1362413, 129.09865],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_4e0a7f3751609b4ad43dd0337208c6a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f5ea7a1678e607ae6bccc16ad4a562e8.setIcon(icon_4e0a7f3751609b4ad43dd0337208c6a5);
+        
+    
+        var popup_4a8ac607ddf17c77965729699a506131 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_df84bf8e2a2166214cea45c2ed2d2f7f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzMxNDA0MjAzNzhiNDc2ZjYwNzBjZTVjZmZjYjI4YmY3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk967Cw7Iuc7IucIOyKpO2KnOuUlOyYpCJ0YXJnZXQ9Il9ibGFuayI+ICAgICAgICA8cCBzdHlsZT0iY29sb3I6IzcwQUQyNTtmb250LXNpemU6MjBweDtmb250LWZhbWlseTp2ZXJkYW5hO3RleHQtYWxpZ246Y2VudGVyIj7rsLDsi5zsi5wg7Iqk7Yqc65SU7JikPC9wPjwvYT48L2Rpdj4=" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_4a8ac607ddf17c77965729699a506131.setContent(i_frame_df84bf8e2a2166214cea45c2ed2d2f7f);
+        
+
+        marker_f5ea7a1678e607ae6bccc16ad4a562e8.bindPopup(popup_4a8ac607ddf17c77965729699a506131)
+        ;
+
+        
+    
+    
+            marker_f5ea7a1678e607ae6bccc16ad4a562e8.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 배시시 스튜디오<br />Cost: 13,000<br /> Category: 생활체육<br />Distance: 1296.42(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_558df1ab4f7d4e7bfc6abc057425f789 = L.marker(
+                [35.137519, 129.069994],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_be9c0b511adb22bcb7fce39965e7908a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_558df1ab4f7d4e7bfc6abc057425f789.setIcon(icon_be9c0b511adb22bcb7fce39965e7908a);
+        
+    
+        var popup_410dd19fd698816cff2526eb93ca4cb6 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e2b1874a4a3222fc1cb33eb3b6d4daa3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2Q4MGRlZWEzN2JmNGM0ODE4Y2IxNTMwZDA2NDA1ZTRjIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk96re4656c65Oc66qo7YWUInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuq3uOuenOuTnOuqqO2FlDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_410dd19fd698816cff2526eb93ca4cb6.setContent(i_frame_e2b1874a4a3222fc1cb33eb3b6d4daa3);
+        
+
+        marker_558df1ab4f7d4e7bfc6abc057425f789.bindPopup(popup_410dd19fd698816cff2526eb93ca4cb6)
+        ;
+
+        
+    
+    
+            marker_558df1ab4f7d4e7bfc6abc057425f789.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 그랜드모텔<br />Cost: 21,000<br /> Category: 생활체육<br />Distance: 1313.96(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd587a836cedc8e1df8e2734ff3e9116 = L.marker(
+                [35.12764, 129.074913],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_f30d0e0d04879dce6616931e0988deba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cd587a836cedc8e1df8e2734ff3e9116.setIcon(icon_f30d0e0d04879dce6616931e0988deba);
+        
+    
+        var popup_69e57002915d89d3a4116bc18b447653 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_327aebb2302ff30b41a5ce891b2470ca = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzc0NTkxODkwNThiZWVkMzU2MDM5NzIwZGYzYzc1ZWIwIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964Ko6rWs7KKF7ZWp7IKs7ZqM67O17KeA6rSAInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuuCqOq1rOyihe2VqeyCrO2ajOuzteyngOq0gDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_69e57002915d89d3a4116bc18b447653.setContent(i_frame_327aebb2302ff30b41a5ce891b2470ca);
+        
+
+        marker_cd587a836cedc8e1df8e2734ff3e9116.bindPopup(popup_69e57002915d89d3a4116bc18b447653)
+        ;
+
+        
+    
+    
+            marker_cd587a836cedc8e1df8e2734ff3e9116.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 남구종합사회복지관<br />Cost: 28,000<br /> Category: 여행<br />Distance: 1317.93(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d10d8a689dd9e46073f2a7571ff40c4 = L.marker(
+                [35.1274029, 129.0938079],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_57bfe4c4157e54ce0f0cf9975d59bcd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7d10d8a689dd9e46073f2a7571ff40c4.setIcon(icon_57bfe4c4157e54ce0f0cf9975d59bcd0);
+        
+    
+        var popup_087d0833bfb9335c63333031fff4eef6 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_7f85efbe1190b096e0fc4ee1d9af8265 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2MxZmRkMzA4ZDJlNGMxYWQ0NjQ2MWIyOGJkMzMyNjNmIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk967aA7IKw66y47ZmU7ZqM6rSAInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuu2gOyCsOusuO2ZlO2ajOq0gDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_087d0833bfb9335c63333031fff4eef6.setContent(i_frame_7f85efbe1190b096e0fc4ee1d9af8265);
+        
+
+        marker_7d10d8a689dd9e46073f2a7571ff40c4.bindPopup(popup_087d0833bfb9335c63333031fff4eef6)
+        ;
+
+        
+    
+    
+            marker_7d10d8a689dd9e46073f2a7571ff40c4.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 부산문화회관<br />Cost: 13,000<br /> Category: 생활체육<br />Distance: 1333.34(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12b852324026e8651fdc038ec8372674 = L.marker(
+                [35.1366673, 129.09924],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_23135a3b6f78c5ed852ca95735dd3136 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_12b852324026e8651fdc038ec8372674.setIcon(icon_23135a3b6f78c5ed852ca95735dd3136);
+        
+    
+        var popup_99e2a48a9f020361e7921f9f8ade9e3e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e49c20cd33a9617261caedf4b8b62c78 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzhhNjM5NmQ5NzM3MGI2NjI5NWJiZmM1YmI0ZTcyYTVlIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97JWM652865SYIOykkeqzoOyEnOygkCDrtoDsgrAg6rK97ISx64yA7KCQInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyVjOudvOuUmCDspJHqs6DshJzsoJAg67aA7IKwIOqyveyEseuMgOygkDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_99e2a48a9f020361e7921f9f8ade9e3e.setContent(i_frame_e49c20cd33a9617261caedf4b8b62c78);
+        
+
+        marker_12b852324026e8651fdc038ec8372674.bindPopup(popup_99e2a48a9f020361e7921f9f8ade9e3e)
+        ;
+
+        
+    
+    
+            marker_12b852324026e8651fdc038ec8372674.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 알라딘 중고서점 부산 경성대점<br />Cost: 33,000<br /> Category: 생활체육<br />Distance: 1349.47(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5cf9fe884bee1fef51e44ef79ebc6f1 = L.marker(
+                [35.1366673, 129.09924],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_4a30b122f3222e9c2a625a0ab7dd0ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c5cf9fe884bee1fef51e44ef79ebc6f1.setIcon(icon_4a30b122f3222e9c2a625a0ab7dd0ac1);
+        
+    
+        var popup_9a7dcc4e25c47eb7c1dceb09a2a875eb = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_908c7c790237774e1c4211b46fef639a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzA2ZjY4NTg3ODM3N2U4YjgxMDZlOGQ5YTg1YmFlOGNlIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97JWM652865SYIOykkeqzoOyEnOygkCDrtoDsgrDqsr3shLHrjIDrtoDqsr3rjIDsl63soJBf66y47ZmU67mEInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyVjOudvOuUmCDspJHqs6DshJzsoJAg67aA7IKw6rK97ISx64yA67aA6rK964yA7Jet7KCQX+usuO2ZlOu5hDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_9a7dcc4e25c47eb7c1dceb09a2a875eb.setContent(i_frame_908c7c790237774e1c4211b46fef639a);
+        
+
+        marker_c5cf9fe884bee1fef51e44ef79ebc6f1.bindPopup(popup_9a7dcc4e25c47eb7c1dceb09a2a875eb)
+        ;
+
+        
+    
+    
+            marker_c5cf9fe884bee1fef51e44ef79ebc6f1.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 알라딘 중고서점 부산경성대부경대역점_문화비<br />Cost: 20,000<br /> Category: 생활체육<br />Distance: 1349.47(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a927e4d63a454abddd92c39a903f5b68 = L.marker(
+                [35.1373397, 129.0992599],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_5d53b7448452d855fa0334d3eca4a0bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a927e4d63a454abddd92c39a903f5b68.setIcon(icon_5d53b7448452d855fa0334d3eca4a0bc);
+        
+    
+        var popup_962ce895cb54488d089b389e1da7d143 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_0f4178f30a01aaba16f6957b5d68c090 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzI0MmE5NzAwZTk5YTgzOTM1ZDhjMDI4NDI5NmRhYjY4IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk9Q0dWIOuMgOyXsCjrrLTruYTrqLjri4gpKOyDge2SiOq2jCkidGFyZ2V0PSJfYmxhbmsiPiAgICAgICAgPHAgc3R5bGU9ImNvbG9yOiM3MEFEMjU7Zm9udC1zaXplOjIwcHg7Zm9udC1mYW1pbHk6dmVyZGFuYTt0ZXh0LWFsaWduOmNlbnRlciI+Q0dWIOuMgOyXsCjrrLTruYTrqLjri4gpKOyDge2SiOq2jCk8L3A+PC9hPjwvZGl2Pg==" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_962ce895cb54488d089b389e1da7d143.setContent(i_frame_0f4178f30a01aaba16f6957b5d68c090);
+        
+
+        marker_a927e4d63a454abddd92c39a903f5b68.bindPopup(popup_962ce895cb54488d089b389e1da7d143)
+        ;
+
+        
+    
+    
+            marker_a927e4d63a454abddd92c39a903f5b68.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: CGV 대연(무비머니)(상품권)<br />Cost: 27,000<br /> Category: 생활체육<br />Distance: 1353.76(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1542d3a92b913d1501a1a2144251d2b5 = L.marker(
+                [35.1373397, 129.0992599],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_2dad777e918b91330fd2a2f4c4051e3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1542d3a92b913d1501a1a2144251d2b5.setIcon(icon_2dad777e918b91330fd2a2f4c4051e3f);
+        
+    
+        var popup_407cbd40416ce24f311981c1f43c2f44 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_56610c3d965ad867aa0197220f2ceb29 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzBjYzhhYjJlN2QwZWVlMTA2NWRmZmVmYzRiOWJlMTYyIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk9Q0dWIOuMgOyXsCJ0YXJnZXQ9Il9ibGFuayI+ICAgICAgICA8cCBzdHlsZT0iY29sb3I6IzcwQUQyNTtmb250LXNpemU6MjBweDtmb250LWZhbWlseTp2ZXJkYW5hO3RleHQtYWxpZ246Y2VudGVyIj5DR1Yg64yA7JewPC9wPjwvYT48L2Rpdj4=" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_407cbd40416ce24f311981c1f43c2f44.setContent(i_frame_56610c3d965ad867aa0197220f2ceb29);
+        
+
+        marker_1542d3a92b913d1501a1a2144251d2b5.bindPopup(popup_407cbd40416ce24f311981c1f43c2f44)
+        ;
+
+        
+    
+    
+            marker_1542d3a92b913d1501a1a2144251d2b5.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: CGV 대연<br />Cost: 13,000<br /> Category: 여행<br />Distance: 1353.76(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ae77ef246b3484ac211e13e8e101747 = L.marker(
+                [35.1373397, 129.0992599],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_92b349c1944da94afcd176e8948bf3cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3ae77ef246b3484ac211e13e8e101747.setIcon(icon_92b349c1944da94afcd176e8948bf3cc);
+        
+    
+        var popup_278302f4df3b7140c5da36588a2e7eba = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_329c62e48c4d461ce1974f770aa82ed3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzlmZTdjNjZmMjkxZGE5N2QxODYzZjNkNTNhY2VkODk5IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk9Q0dWIOuMgOyXsCjrp6TsoJApInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPkNHViDrjIDsl7Ao66ek7KCQKTwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_278302f4df3b7140c5da36588a2e7eba.setContent(i_frame_329c62e48c4d461ce1974f770aa82ed3);
+        
+
+        marker_3ae77ef246b3484ac211e13e8e101747.bindPopup(popup_278302f4df3b7140c5da36588a2e7eba)
+        ;
+
+        
+    
+    
+            marker_3ae77ef246b3484ac211e13e8e101747.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: CGV 대연(매점)<br />Cost: 13,000<br /> Category: 여행<br />Distance: 1353.76(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_702a58789a85942d6e3a8d9dc7479361 = L.marker(
+                [35.136801, 129.099535],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_466ba46f56dfa3bbc8dfd9bb1f8cd2e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_702a58789a85942d6e3a8d9dc7479361.setIcon(icon_466ba46f56dfa3bbc8dfd9bb1f8cd2e4);
+        
+    
+        var popup_ca55f114e105f763a7072e496d236585 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_2f0d7387052badf66cc71be51a3c5607 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2NmNjQxMjZkZDEzN2E4ZTIwYTQ5ZTlkYmExMjBlYzcyIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk96rOg7Jq067CU64ukInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuqzoOyatOuwlOuLpDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_ca55f114e105f763a7072e496d236585.setContent(i_frame_2f0d7387052badf66cc71be51a3c5607);
+        
+
+        marker_702a58789a85942d6e3a8d9dc7479361.bindPopup(popup_ca55f114e105f763a7072e496d236585)
+        ;
+
+        
+    
+    
+            marker_702a58789a85942d6e3a8d9dc7479361.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 고운바다<br />Cost: 14,000<br /> Category: 문화공연관람<br />Distance: 1376.46(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f734a992c300c7577288a83dcb4bd94d = L.marker(
+                [35.1311185, 129.098272],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_875f5fa047ce887506e73e89f2315f5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f734a992c300c7577288a83dcb4bd94d.setIcon(icon_875f5fa047ce887506e73e89f2315f5b);
+        
+    
+        var popup_e08c88ccc78e17ca4643df8b5298cc26 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_576dc99e5ac4237324e70a1dbd9a72a4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2YxMjZhOWEyYzI4ODBhMzg4YjY2NmZmMzRiMTBjM2M1IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk966+87YS07Iqk7Y+s7LigKO2VnOq1reyKpO2PrOy4oO2GteyDgSkidGFyZ2V0PSJfYmxhbmsiPiAgICAgICAgPHAgc3R5bGU9ImNvbG9yOiM3MEFEMjU7Zm9udC1zaXplOjIwcHg7Zm9udC1mYW1pbHk6dmVyZGFuYTt0ZXh0LWFsaWduOmNlbnRlciI+66+87YS07Iqk7Y+s7LigKO2VnOq1reyKpO2PrOy4oO2GteyDgSk8L3A+PC9hPjwvZGl2Pg==" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_e08c88ccc78e17ca4643df8b5298cc26.setContent(i_frame_576dc99e5ac4237324e70a1dbd9a72a4);
+        
+
+        marker_f734a992c300c7577288a83dcb4bd94d.bindPopup(popup_e08c88ccc78e17ca4643df8b5298cc26)
+        ;
+
+        
+    
+    
+            marker_f734a992c300c7577288a83dcb4bd94d.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 민턴스포츠(한국스포츠통상)<br />Cost: 22,000<br /> Category: 여행<br />Distance: 1401.01(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8ef00e935de64c34b054db71479a526 = L.marker(
+                [35.136769, 129.100033],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_f13804cc51a8e2a28c72bb71e992861d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a8ef00e935de64c34b054db71479a526.setIcon(icon_f13804cc51a8e2a28c72bb71e992861d);
+        
+    
+        var popup_4ce23c948b0b6fcbe7bb6a7c70f52077 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_43de60a967c4f9cd9699fd7ef3d4851b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2M1NDhhMWMxMGZmOGZiYTc4NjA0MjQ0Njg0OTQ3N2EzIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964+Z7JWE7ISc7KCBInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuuPmeyVhOyEnOyggTwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_4ce23c948b0b6fcbe7bb6a7c70f52077.setContent(i_frame_43de60a967c4f9cd9699fd7ef3d4851b);
+        
+
+        marker_a8ef00e935de64c34b054db71479a526.bindPopup(popup_4ce23c948b0b6fcbe7bb6a7c70f52077)
+        ;
+
+        
+    
+    
+            marker_a8ef00e935de64c34b054db71479a526.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 동아서적<br />Cost: 25,000<br /> Category: 문화공연관람<br />Distance: 1421.68(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f41530768be99d5131792f9be9d84a29 = L.marker(
+                [35.1384367, 129.100097],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_acf2f5ad3a0717b74e5370c5a73c23d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f41530768be99d5131792f9be9d84a29.setIcon(icon_acf2f5ad3a0717b74e5370c5a73c23d9);
+        
+    
+        var popup_a706b608e6a22fba9c2b0dc4dfbde646 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1b1e3da80a118da94dc09e3f92789e07 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzIzNTlhYzJmZGEwNGMyYzI5YWFjODQzNmFlNmZlZjQzIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk96rK97ISx64yA7ZWZ6rWQIOq1rOuCtOyEnOygkDIz7Zi46rSAIDMwM+2YuCJ0YXJnZXQ9Il9ibGFuayI+ICAgICAgICA8cCBzdHlsZT0iY29sb3I6IzcwQUQyNTtmb250LXNpemU6MjBweDtmb250LWZhbWlseTp2ZXJkYW5hO3RleHQtYWxpZ246Y2VudGVyIj7qsr3shLHrjIDtlZnqtZAg6rWs64K07ISc7KCQMjPtmLjqtIAgMzAz7Zi4PC9wPjwvYT48L2Rpdj4=" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_a706b608e6a22fba9c2b0dc4dfbde646.setContent(i_frame_1b1e3da80a118da94dc09e3f92789e07);
+        
+
+        marker_f41530768be99d5131792f9be9d84a29.bindPopup(popup_a706b608e6a22fba9c2b0dc4dfbde646)
+        ;
+
+        
+    
+    
+            marker_f41530768be99d5131792f9be9d84a29.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 경성대학교 구내서점23호관 303호<br />Cost: 34,000<br /> Category: 여행<br />Distance: 1441.9(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_755f8f06245e038ced4d763d68b1fd6f = L.marker(
+                [35.1339504, 129.1002468],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_86ccf902a840dad2cb496201850bb0ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_755f8f06245e038ced4d763d68b1fd6f.setIcon(icon_86ccf902a840dad2cb496201850bb0ec);
+        
+    
+        var popup_627091fadbda512d2d2b05bd8605af6b = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_54f4cf50aaacf1aed6887004aa463d4d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzZjMTQ3N2ZjNDkxZTA3YWQ4ZGQ3ZDEwN2M3ZGRlMzI3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk9KOyCrOuLqCnsnbjsvZTrpqzslYgg7Ius7Y+s64uI7Jik7LyA7Iqk7Yq46528InRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPijsgqzri6gp7J247L2U66as7JWIIOyLrO2PrOuLiOyYpOy8gOyKpO2KuOudvDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_627091fadbda512d2d2b05bd8605af6b.setContent(i_frame_54f4cf50aaacf1aed6887004aa463d4d);
+        
+
+        marker_755f8f06245e038ced4d763d68b1fd6f.bindPopup(popup_627091fadbda512d2d2b05bd8605af6b)
+        ;
+
+        
+    
+    
+            marker_755f8f06245e038ced4d763d68b1fd6f.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: (사단)인코리안 심포니오케스트라<br />Cost: 17,000<br /> Category: 문화공연관람<br />Distance: 1470.84(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38fd18d5faf14fb472e6d466e332e4a6 = L.marker(
+                [35.136565, 129.100686],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_849fc3f800ac7fbb9ad671121378980c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_38fd18d5faf14fb472e6d466e332e4a6.setIcon(icon_849fc3f800ac7fbb9ad671121378980c);
+        
+    
+        var popup_fbbe23d06d815c9224567f4982dad06a = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_a6e87ab508a6ea63b39cc4c2509436c5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sX2RhNjIxZDFhNGRlYzMyMjlmY2QyNDNkMmIwN2JhZTc2IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk964yA7ZWZd2l0aOyKpO2KnOuUlOyYpCJ0YXJnZXQ9Il9ibGFuayI+ICAgICAgICA8cCBzdHlsZT0iY29sb3I6IzcwQUQyNTtmb250LXNpemU6MjBweDtmb250LWZhbWlseTp2ZXJkYW5hO3RleHQtYWxpZ246Y2VudGVyIj7rjIDtlZl3aXRo7Iqk7Yqc65SU7JikPC9wPjwvYT48L2Rpdj4=" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_fbbe23d06d815c9224567f4982dad06a.setContent(i_frame_a6e87ab508a6ea63b39cc4c2509436c5);
+        
+
+        marker_38fd18d5faf14fb472e6d466e332e4a6.bindPopup(popup_fbbe23d06d815c9224567f4982dad06a)
+        ;
+
+        
+    
+    
+            marker_38fd18d5faf14fb472e6d466e332e4a6.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 대학with스튜디오<br />Cost: 11,000<br /> Category: 여행<br />Distance: 1480.95(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb6e9ef908c2ed2ed8ee887ed445a5e5 = L.marker(
+                [35.137175, 129.100704],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_f2b38cd47b910a32b503c80589289232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb6e9ef908c2ed2ed8ee887ed445a5e5.setIcon(icon_f2b38cd47b910a32b503c80589289232);
+        
+    
+        var popup_e737de16a75484e0b97b4659a9c1021e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_83104f42d0d150b77876a2d35c77f6b2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzhmMzc1MDZmOGYwNThiMTFmOTQ0YzBjZjM5NTkwMjA1IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97YGQ67iM652967O866eB7J6lInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPu2BkOu4jOudveuzvOungeyepTwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_e737de16a75484e0b97b4659a9c1021e.setContent(i_frame_83104f42d0d150b77876a2d35c77f6b2);
+        
+
+        marker_cb6e9ef908c2ed2ed8ee887ed445a5e5.bindPopup(popup_e737de16a75484e0b97b4659a9c1021e)
+        ;
+
+        
+    
+    
+            marker_cb6e9ef908c2ed2ed8ee887ed445a5e5.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 큐브락볼링장<br />Cost: 24,000<br /> Category: 문화공연관람<br />Distance: 1483.95(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5868c7af790cc9e162f3a162bbbe91e4 = L.marker(
+                [35.137157, 129.100706],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_663a8546899e034f31745e31fcd9c0ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5868c7af790cc9e162f3a162bbbe91e4.setIcon(icon_663a8546899e034f31745e31fcd9c0ea);
+        
+    
+        var popup_23900fd5fd904c25931ac6b0a012116d = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_fe42be8890876fc817b1936881ac8b90 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzg5MTNmOTI2MzI1ODFiYTI4YjY3MTRkNmIyMjJlYTBlIiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk9KOyjvCnthLDsuZjsiqTthqQidGFyZ2V0PSJfYmxhbmsiPiAgICAgICAgPHAgc3R5bGU9ImNvbG9yOiM3MEFEMjU7Zm9udC1zaXplOjIwcHg7Zm9udC1mYW1pbHk6dmVyZGFuYTt0ZXh0LWFsaWduOmNlbnRlciI+KOyjvCnthLDsuZjsiqTthqQ8L3A+PC9hPjwvZGl2Pg==" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_23900fd5fd904c25931ac6b0a012116d.setContent(i_frame_fe42be8890876fc817b1936881ac8b90);
+        
+
+        marker_5868c7af790cc9e162f3a162bbbe91e4.bindPopup(popup_23900fd5fd904c25931ac6b0a012116d)
+        ;
+
+        
+    
+    
+            marker_5868c7af790cc9e162f3a162bbbe91e4.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: (주)터치스톤<br />Cost: 18,000<br /> Category: 여행<br />Distance: 1484.05(m)<br />Call payment: Not-Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a342c5cdd42d9533e6dd78a86f76834 = L.marker(
+                [35.123537, 129.080243],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_e6b0f49ec54765c2d1f8898e1083c044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a342c5cdd42d9533e6dd78a86f76834.setIcon(icon_e6b0f49ec54765c2d1f8898e1083c044);
+        
+    
+        var popup_aaa1ce807ac02f5c73afcb1fe5ab6bac = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_6e2ccf38b66c03c411c77452f785c287 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzA4MGM3MDczOWQ3MzIwMDE2Y2U3MTdiMDMyYWUxYzc3IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97ISx7KeA7ISc7KCQInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyEseyngOyEnOygkDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_aaa1ce807ac02f5c73afcb1fe5ab6bac.setContent(i_frame_6e2ccf38b66c03c411c77452f785c287);
+        
+
+        marker_6a342c5cdd42d9533e6dd78a86f76834.bindPopup(popup_aaa1ce807ac02f5c73afcb1fe5ab6bac)
+        ;
+
+        
+    
+    
+            marker_6a342c5cdd42d9533e6dd78a86f76834.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 성지서점<br />Cost: 35,000<br /> Category: 여행<br />Distance: 1500.93(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b81ab03e92bf790a394caebd807cc705 = L.marker(
+                [35.138057, 129.100873],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_dde8c9bd205224c6f21d003b97d48cd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b81ab03e92bf790a394caebd807cc705.setIcon(icon_dde8c9bd205224c6f21d003b97d48cd3);
+        
+    
+        var popup_a23db9a568062e29d04f9999ba2cd136 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_44a4a825d30678de50bbedd9f7116523 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8ZGl2IGlkPSJodG1sXzkwNmQ5NGM3MjA4MDg3NWU5OGU1NDFlNjg4ZDFlY2E4IiBzdHlsZT0id2lkdGg6IDEwMC4wJTsgaGVpZ2h0OiAxMDAuMCU7Ij48YSBocmVmPSJodHRwOi8vc2VhcmNoLm5hdmVyLmNvbS9zZWFyY2gubmF2ZXI/cXVlcnk97JiB64Ko7ZmU67Cp66y46rWsInRhcmdldD0iX2JsYW5rIj4gICAgICAgIDxwIHN0eWxlPSJjb2xvcjojNzBBRDI1O2ZvbnQtc2l6ZToyMHB4O2ZvbnQtZmFtaWx5OnZlcmRhbmE7dGV4dC1hbGlnbjpjZW50ZXIiPuyYgeuCqO2ZlOuwqeusuOq1rDwvcD48L2E+PC9kaXY+" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_a23db9a568062e29d04f9999ba2cd136.setContent(i_frame_44a4a825d30678de50bbedd9f7116523);
+        
+
+        marker_b81ab03e92bf790a394caebd807cc705.bindPopup(popup_a23db9a568062e29d04f9999ba2cd136)
+        ;
+
+        
+    
+    
+            marker_b81ab03e92bf790a394caebd807cc705.bindTooltip(
+                `<div>
+                     Not Accepted<br />Name: 영남화방문구<br />Cost: 31,000<br /> Category: 여행<br />Distance: 1506.67(m)<br />Call payment: Available
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79d1c5e06601951dd06ee20a79871dd2 = L.marker(
+                [35.1366, 129.0844],
+                {}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+    
+            var icon_3787a5abf3c413720f5ccdac85613eda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_79d1c5e06601951dd06ee20a79871dd2.setIcon(icon_3787a5abf3c413720f5ccdac85613eda);
+        
+    
+            marker_79d1c5e06601951dd06ee20a79871dd2.bindTooltip(
+                `<div>
+                     <b>User</b><br />coord: [35.1366, 129.0844]<br />deposit: 100,000
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f969e823c59f3310f4b1182bb51cc761 = L.circle(
+                [35.1366, 129.0844],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 898.2160272868799, "stroke": true, "weight": 3}
+            ).addTo(map_6ba5d7602df4de6a6823e2f91b400968);
+        
+</script>
