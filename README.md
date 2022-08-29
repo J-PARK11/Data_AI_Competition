@@ -43,11 +43,11 @@ Raw Data Source - [Culture Data Competition Raw Data Source](https://www.bigdata
 <p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/Culture%20Data%20Competition/figure/WORDCLOUD.png" width = '800'/></p>
 
 ### Stacks
-- **Python**
+- **Python**   
     (Pandas, Numpy, Matplotlib, Seaborn, haversine, wordcloud)
-- **Folium**
+- **Folium**   
     (Map, Html, IFrame, Marker, Popup, Circle)
-- **Tableau**
+- **Tableau**   
     (Visualization, EDA, Analysis)
 
 ---
