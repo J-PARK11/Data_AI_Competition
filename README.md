@@ -1,4 +1,4 @@
-# 📌 Data_AI_Competition
+# 💽 Data_AI_Competition
 Documents and codes of competitions related to Data and Artificial Intelligence
 
 ## 📑 Index
@@ -21,10 +21,33 @@ Raw Data Source - [COVID-19 Cough Voice Detector Raw Data Source](https://dacon.
 
 <p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/COVID-19%20Voice%20Detection/figure/Main%20Post.png" width = '800'/></p>
 <p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/COVID-19%20Voice%20Detection/figure/DATA%20PREPROCESSING.png" width = '800'/></p>
-    <p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/COVID-19%20Voice%20Detection/figure/ML%20FRAMEWORK.png" width = '800'/></p>
+<p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/COVID-19%20Voice%20Detection/figure/ML%20FRAMEWORK.png" width = '800'/></p>
 
 ### Stacks
 - **Python**   
     (Sckit-learn, Pandas, Numpy, Matplotlib, Librosa, pickle, IPython)
 - **Streamlit**   
     (Dashboard Incorpolate, Model Embedding, Visualization)
+
+
+## 🎯 Culture Data Competition
+### Link
+Team Notion - [Culture Data Competition Team Notion](https://www.notion.so/likelion-aischool/bc13a13c6652401aa2b05c267a6044a5?p=a97dd8bc191c481c9d6a94e14a7831b8&pm=c)   
+Raw Data Source - [Culture Data Competition Raw Data Source](https://www.bigdata-culture.kr/bigdata/user/data_market/list.do)   
+
+### Contents
+> GPS 기반의 문화 시설 패키지 추천 서비스는 App 사용자의 위치 및 사용자 정보를 토대로 결정 규칙 알고리즘에 따라,  규칙에 부합하는 문화시설을 패키징하여 추천해주는 서비스입니다.  먼저, 사용자의 단말기로부터 GPS 정보와 등록된 문화누리카드의 잔금 등 서비스 제공에 필요한 정보를 불러옵니다. 이후 사용자의 위치와 주변 문화시설과의 접근성을 고려하여 잔금 내에서 최대한 다양한 종류의 문화 프로그램을 즐길 수 있도록 프로그램 리스트를 패키징하여 추천합니다.   
+
+<p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/Culture%20Data%20Competition/figure/MAIN%20TITLE.png" width = '800'/></p>
+<p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/Culture%20Data%20Competition/figure/Service%20Demo%20Version%20Figure.png" width = '800'/></p>
+<p align="center"><img src = "https://github.com/J-PARK11/Data_AI_Competition/blob/master/Culture%20Data%20Competition/figure/WORDCLOUD.png" width = '800'/></p>
+
+### Stacks
+- **Python**
+    (Pandas, Numpy, Matplotlib, Seaborn, haversine, wordcloud)
+- **Folium**
+    (Map, Html, IFrame, Marker, Popup, Circle)
+- **Tableau**
+    (Visualization, EDA, Analysis)
+
+---
