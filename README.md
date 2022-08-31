@@ -2,8 +2,8 @@
 Documents and codes of competitions related to Data and Artificial Intelligence
 
 ## 📑 Index
-* COVID-19 Cough Voice Detetcion
-* Culture Data Competition
+* 🌟 COVID-19 Cough Voice Detetcion
+* 🌟 Culture Data Competition
 * Object Image Classification Contest
 * Visualization Competition
 
